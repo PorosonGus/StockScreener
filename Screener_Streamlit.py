@@ -3,7 +3,7 @@ import pandas as pd
 import sqlite3
 
 # Set page configuration
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", theme="dark")
 
 def load_data():
     try:
