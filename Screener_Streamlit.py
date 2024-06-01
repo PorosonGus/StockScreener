@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 def load_data():
     try:
         # Connect to SQLite database
-        conn = sqlite3.connect(r'StockScreener_Entry_01.06.2024.db')
+        conn = sqlite3.connect(r'StockScreener_Entry.db')
         query = 'SELECT * FROM measures'  # Replace with your measures table name
         df_measures = pd.read_sql(query, conn)
         conn.close()
